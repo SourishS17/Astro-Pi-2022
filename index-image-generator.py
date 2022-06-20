@@ -1,7 +1,6 @@
 import numpy
 import cv2
 import matplotlib.pyplot as plt
-#from orbit import ISS
 import skyfield
 import os
 
