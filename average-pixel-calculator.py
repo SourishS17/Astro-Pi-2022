@@ -30,13 +30,10 @@ for filename in os.listdir("imgs"):
   ci[ci == numpy.inf] = 0
   ci = numpy.nan_to_num(ci)
 
-  #IMGS!!!!! If you need yo check. These make the background appear a moderate colour (the background is set to 0 and some values are negative, so this appears as a middleish colour)
   #plt.imsave("vegetation.jpg", savi, cmap=plt.cm.Greens)
   #plt.imsave("water.jpg", ndwi, cmap=plt.cm.Blues)
   #plt.imsave("chlorophyll.jpg", ci, cmap=plt.cm.Reds)
-  #av_savi = min([min(i) for i in [j for j in savi]])
   av_savi = sum([sum(i) for i in savi]) / numpy.count_nonzero(savi)
   av_ndwi = sum([sum(i) for i in ndwi]) / numpy.count_nonzero(ndwi)
   av_ci = sum([sum(i) for i in ci]) / numpy.count_nonzero(ci)
   print(av_savi, av_ndwi, av_ci)
-  print("")
