@@ -12,6 +12,9 @@
 
 `entro.py` is the raw program used to create and export entropy values to `entropies.csv`.
 
+Finally, `Pithons AstroPi 2022.pdf` is our complete report.
+
+
 <br>
 <br>
 
